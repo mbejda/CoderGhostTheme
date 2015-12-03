@@ -1,0 +1,17 @@
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="{{@blog.title}}"/>
+<meta property="og:description" content="{{excerpt characters="220"}}"/>
+<meta property="og:site_name" content="{{@blog.title}}"/>
+<meta property="og:url" content="{{@blog.url}}"/>
+{{#if image}}
+  <meta property="og:image" content="{{@blog.logo}}"/>
+{{/if}}
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{@blog.title}}"/>
+<meta name="twitter:description" content="{{excerpt words="140"}}"/>
+{{#if @blog.logo}}
+  <meta name="twitter:image" content="{{@blog.logo}}"/>
+{{/if}}

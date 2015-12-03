@@ -1,0 +1,36 @@
+<header class="container-fluid cover
+{{#is "index,home"}}
+    {{#if @blog.cover}}" style="background-image: url({{@blog.cover}})
+    {{else}}default-cover
+    {{/if}}
+{{else}}
+    {{#is "author"}}
+        {{#if cover}}" style="background-image: url({{cover}})
+        {{else}}no-cover
+        {{/if}}
+    {{else}}
+        {{#if image}}" style="background-image: url({{image}})
+        {{else}}no-cover
+        {{/if}}
+    {{/is}}
+{{/is}}">
+    <div class="navbar" role="navigation">
+        <div class="container">
+            <div class="pull-left">
+                <a class="{{#if image}}btn navbar-btn{{else}}navbar-brand{{/if}}" href="{{@blog.url}}">
+                    {{#if @blog.logo}}
+                        <img src="{{@blog.logo}}" alt="Blog Logo"/>
+                    {{/if}}
+                    <span class="hidden-xs">&nbsp;{{@blog.title}}</span>
+                </a>
+            </div>
+            <div class="pull-right">
+                <a class="btn navbar-btn" href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i> Subscribe</a>
+                &nbsp;
+                <!--<form class="navbar-btn pull-right hidden-xs" autocomplete="off">
+                    <input id="search-field" type="text"  placeholder="Search article"/>
+                </form>-->
+            </div>
+        </div>
+    </div>
+</header>

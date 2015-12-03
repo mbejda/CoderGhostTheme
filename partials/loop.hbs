@@ -1,0 +1,30 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="summary col-md-12 {{post_class}}">
+    <header>
+        <h2 class="title">
+        <a href="{{url}}">{{{title}}}
+
+        </a> 
+
+        </h2>
+
+    </header>
+           <div class="subhead"> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix="<span class='fa fa-tags'></span>&nbsp;"}}</div>
+
+    <section class="description">
+        <p>{{excerpt words="30"}} 
+
+<a class="read-more" href="{{url}}"><i class="el el-caret-right read-more"></i></a>
+        </p>
+    
+    </section>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+<div class="row text-center">
+    <div class="col-xs-12">
+        {{pagination}}
+    </div>
+</div>
