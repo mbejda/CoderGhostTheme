@@ -1,3 +1,4 @@
+# Coder Ghost Theme for Showcasing Projects
 Open sourcing the Coder Ghost theme. The coder ghost theme was built to show case my open source projects. The theme is packed with the following features :  
 
 - mobile friendly
