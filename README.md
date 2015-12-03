@@ -12,7 +12,7 @@ Open sourcing the Coder Ghost theme. The coder ghost theme was built to show cas
 Goto the Github and [download](https://twitter.com/notmilobejda) the repository zip archive and extract its contents. Change the contact urls in the `partials/navbar.hbs` file to your own and archive the contents. Upload the archive to your Ghost CMS. 
 
 
-![](/content/images/2015/12/download--2-.png#400)
+![](https://www.mbejda.com/content/images/2015/12/download--2-.png#400)
 <hr>
 If you need support send me a tweet at <br>
 Twitter: [@notmilosbejda](https://twitter.com/notmilobejda)<br>
