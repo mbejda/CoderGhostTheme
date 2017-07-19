@@ -131,3 +131,9 @@ a.read-more{
   height:90%;
   line-height:5;
 }
+
+article.post img {
+ width:100%;   
+ margin-top:10px;
+ margin-bottom:10px;
+}
