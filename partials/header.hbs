@@ -1,15 +1,17 @@
 <header class="container-fluid cover
 {{#is "index,home"}}
-    {{#if @blog.cover}}" style="background-image: url({{@blog.cover}})
+
+
+    {{#if @blog.cover_image}}" style="background-image: url({{cover_image}})
     {{else}}default-cover
     {{/if}}
 {{else}}
     {{#is "author"}}
-        {{#if cover}}" style="background-image: url({{cover}})
+        {{#if cover_image}}" style="background-image: url({{cover_image}})
         {{else}}no-cover
         {{/if}}
     {{else}}
-        {{#if image}}" style="background-image: url({{image}})
+        {{#if feature_image}}" style="background-image: url({{feature_image}})
         {{else}}no-cover
         {{/if}}
     {{/is}}
@@ -17,7 +19,7 @@
     <div class="navbar" role="navigation">
         <div class="container">
             <div class="pull-left">
-                <a class="{{#if image}}btn navbar-btn{{else}}navbar-brand{{/if}}" href="{{@blog.url}}">
+                <a class="{{#if @blog.logo}}btn navbar-btn{{else}}navbar-brand{{/if}}" href="{{@blog.url}}">
                     {{#if @blog.logo}}
                         <img src="{{@blog.logo}}" alt="Blog Logo"/>
                     {{/if}}
