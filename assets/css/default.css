@@ -142,6 +142,16 @@ article.post img {
  margin-bottom:10px;
 }
 
+article.post:first-child h2.title {
+  margin-top: 0;
+}
+
+@media (min-width: 576px) {
+  .blog-description h1 {
+    color: white;
+  }
+}
+
 @media (min-width: 768px) {
   .cover {
     max-height: 200px;
