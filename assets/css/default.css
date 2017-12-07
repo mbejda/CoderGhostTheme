@@ -88,13 +88,17 @@ ul.menu li:hover {
 }
 .cover {
   background-size:cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .blog-description h1 {
   font-size:25px;
   font-weight:300;
   line-height: 32px;
-  padding-bottom:20px;
-  border-bottom:10px solid rgba(64, 120, 192, 0.11);
+  border-bottom:10px solid rgba(64, 120, 192, 0.5);
+  display: inline-block;
+  padding: 0 20px 10px;
 }
 .summary header a {
   font-size:18px;
@@ -136,4 +140,16 @@ article.post img {
  width:100%;   
  margin-top:10px;
  margin-bottom:10px;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cover {
+    max-height: 240px;
+  }
 }
