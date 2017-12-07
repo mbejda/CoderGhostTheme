@@ -57,9 +57,12 @@
 <body>
 {{#is "home"}}
     {{#if @blog.cover_image}}
-<div style="background:url({{@blog.cover_image}}) no-repeat center center;" class="cover cover-border hidden-sm hidden-xs">
-</div>
-{{/if}}
+        <div style="background:url({{@blog.cover_image}}) no-repeat center center;" class="cover cover-border hidden-sm hidden-xs">
+            <div class="blog-description">
+                <h1>{{@blog.description}}</h1>
+            </div>
+        </div>
+    {{/if}}
 {{/is}}
 <div class="container">
 <div class="row">
