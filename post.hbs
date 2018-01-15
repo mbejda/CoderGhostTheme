@@ -3,7 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-<a href="/" class="read-more"><i class="el el-caret-left read-more"></i> home</a>
+<a href="{{@blog.url}}" class="read-more"><i class="el el-caret-left read-more"></i> home</a>
 <hr>
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
